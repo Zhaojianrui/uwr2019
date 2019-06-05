@@ -70,6 +70,23 @@ public class TestTemplateProcessor implements DataSourceType{
         //
         //------------------------------------------------
 		//5. 重放所有的行为。
+		DataHolder dhsex = EasyMock.createMock(DataHolder.class);
+		dhsex.setName("sex");
+		EasyMock.expect(dhsex.getValue()).andStubReturn("Female");
+		DataHolder dhrm = EasyMock.createMock(DataHolder.class);
+		dhrm.setName("readme");
+		EasyMock.expect(dhrm.getValue()).andStubReturn("5");
+		DataHolder dhte = EasyMock.createMock(DataHolder.class);
+		dhte.setName("testexpr");
+		EasyMock.expect(dhte.getExpr()).andStubReturn("${num}+${readme}");
+		EasyMock.expect(dhte.fillValue()).andStubReturn(null);
+		EasyMock.expect(dhte.getValue()).andStubReturn("5.0");
+		//vars为ConstDataSource（DataSource）成员
+		ArrayList<DataHolder> vars=new ArrayList<>();
+		//DataHolder放入ArrayList<DataHolder>
+		vars.add(dhsex);
+		vars.add(dhrm);
+		vars.add(dhte);
 		PowerMock.replayAll(dsc);
 		//初始化一个待测试类（SUT）的实例
 		tp = new TemplateProcessor();
