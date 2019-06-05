@@ -99,7 +99,5 @@ public class TestTemplateProcessor implements DataSourceType{
 		PowerMock.replayAll(dsc);
 		//鍒濆鍖栦竴涓緟娴嬭瘯绫伙紙SUT锛夌殑瀹炰緥
 		tp = new TemplateProcessor();
-
-
 	}
 }
