@@ -19,57 +19,57 @@ import static org.junit.Assert.assertNotNull;
 @PrepareForTest(DataSourceConfig.class)
 @PowerMockIgnore("javax.management.*")
 public class TestTemplateProcessor implements DataSourceType{
-	//待测试类(SUT)的一个实例。
+	//寰呮祴璇曠被(SUT)鐨勪竴涓疄渚嬨��
 	private TemplateProcessor tp;
-	//依赖类(DOC)的一个实例。
+	//渚濊禆绫�(DOC)鐨勪竴涓疄渚嬨��
 	private DataSourceConfig dsc;
 
 	@Test
 	public void testStaticVarExtract() throws Exception {
 
-		//设置待测试类的状态（测试目标方法）
+		//璁剧疆寰呮祴璇曠被鐨勭姸鎬侊紙娴嬭瘯鐩爣鏂规硶锛�
 		tp.staticVarExtract("resource/newtemplatezzz.doc");
-		//以下进行检查点设置
+		//浠ヤ笅杩涜妫�鏌ョ偣璁剧疆
 		DataSource ds = dsc.getConstDataSource();
 
 		List<DataHolder> dhs = ds.getVars();
 		DataHolder dh1 = ds.getDataHolder("sex");
-		assertNotNull("变量sex解析为空", dh1);
-		assertEquals("变量sex值获取错误","Female",dh1.getValue());
+		assertNotNull("鍙橀噺sex瑙ｆ瀽涓虹┖", dh1);
+		assertEquals("鍙橀噺sex鍊艰幏鍙栭敊璇�","Female",dh1.getValue());
 
 		DataHolder dh2 = ds.getDataHolder("readme");
-		assertNotNull("变量readme解析为空", dh2);
-		assertEquals("变量readme值获取错误","5",dh2.getValue());
+		assertNotNull("鍙橀噺readme瑙ｆ瀽涓虹┖", dh2);
+		assertEquals("鍙橀噺readme鍊艰幏鍙栭敊璇�","5",dh2.getValue());
 
 		DataHolder dh3 = ds.getDataHolder("testexpr");
-		assertNotNull("变量testexpr", dh3);
-		assertEquals("变量testexpr的表达式解析错误","${num}+${readme}",dh3.getExpr());
+		assertNotNull("鍙橀噺testexpr", dh3);
+		assertEquals("鍙橀噺testexpr鐨勮〃杈惧紡瑙ｆ瀽閿欒","${num}+${readme}",dh3.getExpr());
 		dh3.fillValue();
-		assertEquals("变量testexpr","5.0",dh3.getValue());
+		assertEquals("鍙橀噺testexpr","5.0",dh3.getValue());
 
-		//检测SUT的实际行为模式是否符合预期
+		//妫�娴婼UT鐨勫疄闄呰涓烘ā寮忔槸鍚︾鍚堥鏈�
 		PowerMock.verifyAll();
 	}
 
 	@Before
 	public void setUp() throws Exception {
 
-		//以下采用Mock对象的方式，做测试前的准备。
-		//与以上方法比较，好处是降低SUT（TemplateProcessor类）与DOC（DataSourceConfig类）之间的耦合性，解耦它们。
-		//从而使得定位缺陷变得容易。
-		//参照流程：
-		//1. 使用EasyMock建立一个DataSourceConfig类的一个Mock对象实例；
-		//2. 录制该实例的STUB模式和行为模式（针对的是非静态方法）；
-		//3. 使用PowerMock建立DataSourceConfig类的静态Mock；
-		//4. 录制该静态Mock的行为模式（针对的是静态方法）；
+		//浠ヤ笅閲囩敤Mock瀵硅薄鐨勬柟寮忥紝鍋氭祴璇曞墠鐨勫噯澶囥��
+		//涓庝互涓婃柟娉曟瘮杈冿紝濂藉鏄檷浣嶴UT锛圱emplateProcessor绫伙級涓嶥OC锛圖ataSourceConfig绫伙級涔嬮棿鐨勮�﹀悎鎬э紝瑙ｈ�﹀畠浠��
+		//浠庤�屼娇寰楀畾浣嶇己闄峰彉寰楀鏄撱��
+		//鍙傜収娴佺▼锛�
+		//1. 浣跨敤EasyMock寤虹珛涓�涓狣ataSourceConfig绫荤殑涓�涓狹ock瀵硅薄瀹炰緥锛�
+		//2. 褰曞埗璇ュ疄渚嬬殑STUB妯″紡鍜岃涓烘ā寮忥紙閽堝鐨勬槸闈為潤鎬佹柟娉曪級锛�
+		//3. 浣跨敤PowerMock寤虹珛DataSourceConfig绫荤殑闈欐�丮ock锛�
+		//4. 褰曞埗璇ラ潤鎬丮ock鐨勮涓烘ā寮忥紙閽堝鐨勬槸闈欐�佹柟娉曪級锛�
         //------------------------------------------------
-        //以上流程请在这里实现：
+        //浠ヤ笂娴佺▼璇峰湪杩欓噷瀹炵幇锛�
         //
         //
-        // 这里写代码
+        // 杩欓噷鍐欎唬鐮�
         //
         //------------------------------------------------
-		//5. 重放所有的行为。
+		//5. 閲嶆斁鎵�鏈夌殑琛屼负銆�
 		DataHolder dhsex = EasyMock.createMock(DataHolder.class);
 		dhsex.setName("sex");
 		EasyMock.expect(dhsex.getValue()).andStubReturn("Female");
@@ -81,14 +81,23 @@ public class TestTemplateProcessor implements DataSourceType{
 		EasyMock.expect(dhte.getExpr()).andStubReturn("${num}+${readme}");
 		EasyMock.expect(dhte.fillValue()).andStubReturn(null);
 		EasyMock.expect(dhte.getValue()).andStubReturn("5.0");
-		//vars为ConstDataSource（DataSource）成员
+		//vars涓篊onstDataSource锛圖ataSource锛夋垚鍛�
 		ArrayList<DataHolder> vars=new ArrayList<>();
-		//DataHolder放入ArrayList<DataHolder>
+		//DataHolder鏀惧叆ArrayList<DataHolder>
 		vars.add(dhsex);
 		vars.add(dhrm);
 		vars.add(dhte);
+		
+		
+		
+		//重放录制内容，ConstDataSource与DataHolder
+		EasyMock.replay(cds);
+		EasyMock.replay(dhsex, dhrm, dhte);
+		//Powermock静态mock行为，测试静态方法
+		PowerMock.mockStatic(DataSourceConfig.class);
+		EasyMock.expect(DataSourceConfig.newInstance()).andStubReturn(dsc);
 		PowerMock.replayAll(dsc);
-		//初始化一个待测试类（SUT）的实例
+		//鍒濆鍖栦竴涓緟娴嬭瘯绫伙紙SUT锛夌殑瀹炰緥
 		tp = new TemplateProcessor();
 	}
 }
