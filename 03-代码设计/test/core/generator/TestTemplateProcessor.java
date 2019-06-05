@@ -87,9 +87,9 @@ public class TestTemplateProcessor implements DataSourceType{
 		vars.add(dhsex);
 		vars.add(dhrm);
 		vars.add(dhte);
-		
-		
-		
+
+
+
 		//重放录制内容，ConstDataSource与DataHolder
 		EasyMock.replay(cds);
 		EasyMock.replay(dhsex, dhrm, dhte);
@@ -99,5 +99,7 @@ public class TestTemplateProcessor implements DataSourceType{
 		PowerMock.replayAll(dsc);
 		//鍒濆鍖栦竴涓緟娴嬭瘯绫伙紙SUT锛夌殑瀹炰緥
 		tp = new TemplateProcessor();
+
+
 	}
 }
