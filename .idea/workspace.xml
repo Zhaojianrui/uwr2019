@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32f7053f-174b-4a90-a6f4-5f0b02188995" name="Default Changelist" comment="">
+    <list default="true" id="f05d30c2-8eb4-4720-a61e-a1be5004f175" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uwr2019.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03-代码设计/test/core/generator/TestTemplateProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/03-代码设计/test/core/generator/TestTemplateProcessor.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03-代码设计/test/core/generator/TestTemplateProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="64" column="58" lean-forward="true" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+            <state relative-caret-position="-988">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -33,22 +44,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/uwr2019.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="283" />
+    <option name="y" value="-26" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="53" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="977" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -61,38 +63,17 @@
           <expand>
             <path>
               <item name="uwr2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uwr2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uwr2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uwr2019" type="462c0819:PsiDirectoryNode" />
               <item name="03-代码设计" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="uwr2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uwr2019" type="462c0819:PsiDirectoryNode" />
-              <item name="03-代码设计" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uwr2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uwr2019" type="462c0819:PsiDirectoryNode" />
               <item name="03-代码设计" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="uwr2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uwr2019" type="462c0819:PsiDirectoryNode" />
               <item name="03-代码设计" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uwr2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uwr2019" type="462c0819:PsiDirectoryNode" />
-              <item name="03-代码设计" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="generator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -102,9 +83,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -120,34 +101,61 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="TestTemplateProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="03-代码设计" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="core.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="core.generator" />
+      <option name="MAIN_CLASS_NAME" value="core.generator.TestTemplateProcessor" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestTemplateProcessor" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="32f7053f-174b-4a90-a6f4-5f0b02188995" name="Default Changelist" comment="" />
-      <created>1559726475678</created>
+      <changelist id="f05d30c2-8eb4-4720-a61e-a1be5004f175" name="Default Changelist" comment="" />
+      <created>1560163106749</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559726475678</updated>
-      <workItem from="1559726481371" duration="112000" />
+      <updated>1560163106749</updated>
+      <workItem from="1560163118473" duration="344000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestTemplateProcessor - 2019.06.10 at 18h 44m 28s.xml">
+      <configuration name="TestTemplateProcessor" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112000" />
+    <option name="totallyTimeSpent" value="344000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="43" width="1400" height="977" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -155,7 +163,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -177,8 +185,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/03-代码设计/test/core/generator/TestTemplateProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="64" column="58" lean-forward="true" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+        <state relative-caret-position="-988">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -187,7 +195,7 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
